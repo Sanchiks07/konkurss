@@ -1,0 +1,41 @@
+/* nomaina background color */
+body {
+    background-color: rgb(207, 17, 245);
+}
+
+@media only screen and (max-width: 800px) { 
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* nomaina bildi */
+.liels {
+    display: initial;
+    height: 300px;
+    width: auto
+}
+.mazs {
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    .liels {
+        display: none;
+    }
+    .mazs {
+        display: initial;
+    }
+}
+
+/* nomaina font sieze, skatoties pēc ekrāna orientācijas */
+@media (orientation: portrait) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        font-size: 20px;
+    }
+}
